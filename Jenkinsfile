@@ -25,7 +25,7 @@ pipeline { //pipeline as code - Jenkinsfile
         }
         stage("Deployment"){
             steps{
-                sh "docker rm -f webos"
+                // sh "docker rm -f webos"
                 sh "docker run -dit --name webos -p 5000:5000 gfgwebimg"
             }
         }
